@@ -1,0 +1,25 @@
+[TEAM] Trade [POS1] [PLAYERNAME] to [TEAM] in exchange for [TRADE]
+[TEAM] release [PLAYERNAME]
+[TEAM], [PLAYERNAME] in talks on record-breaking contract extension
+[PLAYERNAME] signs multi-year deal with the [TEAM], to be paid partly in [PAYMENT]
+[TEAM] designate [PLAYERNAME] for assignment
+[TEAM] shut [PLAYERNAME] down for the rest of the season after suffering debilitating [INJURY]
+[PLAYERNAME] suffers setback after [INJURY], "unlikely" to play for the [TEAM] for the rest of the season
+[TEAM] sign [FREEAGENT] to minor league deal
+[TEAM] sign [FREEAGENT], designate [PLAYERNAME]
+[PLAYERNAME] diagnosed with [INJURY], status is day-to-day
+[TEAM] promote [PLAYERNAME] to Captain
+[TEAM] fire Co-General Manager [CO-GM]
+[TEAM] stage a failed mutiny of General Manager [GM] over complaints of [COMPLAINT]
+[TEAM] Co-GM [CO-GM] successfully stages a coup of [GM]
+Players depose [TEAM] General Manger [GM]
+[PLAYERNAME] found to be tied to [PLAYERNAME] in potential alternate account controversy
+[TEAM] beat reporter suggests move to [LOCATION] may be coming this offseason
+Sources inside the [TEAM] front office suggest move to [LOCATION] unlikely
+[PLAYERNAME] rejects trade to [TEAM] based on NTC, talks resuming
+[PLAYERNAME] sues league over use of likeness in collaboration with [COMPANY]
+[TEAM] and [TEAM] mascots in talks to form union
+[PLAYERNAME] leaving fake sports to join [COMPANY] as latest idol
+[TEAM] to exit league, join [LEAGUE]
+[PLAYERNAME] reaches contract incentive, paid out entirely in [PAYMENT]
+League officials are investigating a possible alting scandal involving [PLAYERNAME]
