@@ -1,7 +1,8 @@
-[TEAM] Trade [POS1] [PLAYERNAME] to [TEAM] in exchange for [TRADE]
-[TEAM] release [PLAYERNAME]
+[TEAM] trade [POS1] [PLAYERNAME] to [TEAM] in exchange for [TRADE]
+[TEAM] finally release [PLAYERNAME]
 [TEAM], [PLAYERNAME] in talks on record-breaking contract extension
-[PLAYERNAME] signs multi-year deal with the [TEAM], to be paid partly in [PAYMENT]
+[PLAYERNAME] signs multi-year deal with the [TEAM], to be paid partially in [PAYMENT]
+[PLAYERNAME] signs one-year deal with the [TEAM], to be paid entirely in [PAYMENT]
 [TEAM] designate [PLAYERNAME] for assignment
 [TEAM] shut [PLAYERNAME] down for the rest of the season after suffering debilitating [INJURY]
 [PLAYERNAME] suffers setback after [INJURY], "unlikely" to play for the [TEAM] for the rest of the season
@@ -23,3 +24,6 @@ Sources inside the [TEAM] front office suggest move to [LOCATION] unlikely
 [TEAM] to exit league, join [LEAGUE]
 [PLAYERNAME] reaches contract incentive, paid out entirely in [PAYMENT]
 League officials are investigating a possible alting scandal involving [PLAYERNAME]
+[PLAYERNAME] is under fire and facing suspension following the reveal of their use of a random number generator in their latest appearance
+[PLAYERNAME] and [PLAYERNAME] are facing suspension following the latest pokerapping scandal
+[TEAM] GM [GM] has been named in ongoing tampering scandal surrounding [PLAYERNAME]

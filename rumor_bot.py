@@ -1,6 +1,24 @@
+import configparser
 import random
+import time
+import tweepy
 import db_interface as db
 import fake_rumor_assets as assets
+from dhooks import Webhook
+
+config_ini = configparser.ConfigParser()
+config_ini.read('config.ini')
+
+consumer_key = config_ini['Twitter']['api_key']
+consumer_secret = config_ini['Twitter']['api_key_secret']
+access_token = config_ini['Twitter']['access_token']
+access_token_secret = config_ini['Twitter']['access_token_secret']
+client_id = config_ini['Twitter']['client_id']
+client_secret = config_ini['Twitter']['client_secret']
+webhook = Webhook(config_ini['Discord']['webhook'])
+
+
+twitter = tweepy.API(tweepy.OAuthHandler(consumer_key, consumer_secret, access_token, access_token_secret))
 
 
 def generate_rumor():
@@ -44,70 +62,24 @@ def generate_rumor():
         rumor = rumor.replace('[PAYMENT]', random.choice(assets.payments))
     if '[LEAGUE]' in rumor:
         rumor = rumor.replace('[LEAGUE]', random.choice(assets.leagues))
-    if random.randint(0, 10) < 5:
+    if random.randint(0, 10) < 3:
         rumor = f'{rumor}, {random.choice(assets.reactions)}'
     else:
         rumor += '.'
     return rumor
 
 
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
-print(generate_rumor())
+while True:
+    try:
+        generated_rumor = ''
+        while generated_rumor == '':
+            generated_rumor = generate_rumor()
+        tweet = twitter.update_status(generated_rumor)
+        webhook.send(f'https://twitter.com/twitter/statuses/{tweet.id}')
+        sleep_time = random.randint(900, 43200)
+        time.sleep(sleep_time)
+    except Exception as e:
+        webhook.send('<@330153321262219284> something broke go fix it')
+        webhook.send(f'{e}')
+        time.sleep(360)
+
