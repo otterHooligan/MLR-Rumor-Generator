@@ -1,14 +1,16 @@
 [TEAM] trade [POS1] [PLAYERNAME] to [TEAM] in exchange for [TRADE]
+[TEAM] trade [POS1] [PLAYERNAME] to [TEAM] in exchange for [TRADE]
+[TEAM] trade [POS1] [PLAYERNAME] to [TEAM] in exchange for [TRADE]
 [TEAM] finally release [PLAYERNAME]
 [TEAM], [PLAYERNAME] in talks on record-breaking contract extension
 [PLAYERNAME] signs multi-year deal with the [TEAM], to be paid partially in [PAYMENT]
 [PLAYERNAME] signs one-year deal with the [TEAM], to be paid entirely in [PAYMENT]
 [TEAM] designate [PLAYERNAME] for assignment
 [TEAM] shut [PLAYERNAME] down for the rest of the season after suffering debilitating [INJURY]
-[PLAYERNAME] suffers setback after [INJURY], "unlikely" to play for the [TEAM] for the rest of the season
+[PLAYERNAME] suffers setback after [INJURY]. [STATUS]
 [TEAM] sign [FREEAGENT] to minor league deal
 [TEAM] sign [FREEAGENT], designate [PLAYERNAME]
-[PLAYERNAME] diagnosed with [INJURY], status is day-to-day
+[PLAYERNAME] diagnosed with [INJURY]. [STATUS]
 [TEAM] promote [PLAYERNAME] to Captain
 [TEAM] fire Co-General Manager [CO-GM]
 [TEAM] stage a failed mutiny of General Manager [GM] over complaints of [COMPLAINT]
@@ -17,13 +19,32 @@ Players depose [TEAM] General Manger [GM]
 [PLAYERNAME] found to be tied to [PLAYERNAME] in potential alternate account controversy
 [TEAM] beat reporter suggests move to [LOCATION] may be coming this offseason
 Sources inside the [TEAM] front office suggest move to [LOCATION] unlikely
-[PLAYERNAME] rejects trade to [TEAM] based on NTC, talks resuming
+[PLAYERNAME] rejects trade to [OTHERTEAM] over no trade clause, talks resuming
 [PLAYERNAME] sues league over use of likeness in collaboration with [COMPANY]
 [TEAM] and [TEAM] mascots in talks to form union
-[PLAYERNAME] leaving fake sports to join [COMPANY] as latest idol
+[PLAYERNAME] leaving fake sports to join [COMPANY]
 [TEAM] to exit league, join [LEAGUE]
 [PLAYERNAME] reaches contract incentive, paid out entirely in [PAYMENT]
 League officials are investigating a possible alting scandal involving [PLAYERNAME]
 [PLAYERNAME] is under fire and facing suspension following the reveal of their use of a random number generator in their latest appearance
 [PLAYERNAME] and [PLAYERNAME] are facing suspension following the latest pokerapping scandal
-[TEAM] GM [GM] has been named in ongoing tampering scandal surrounding [PLAYERNAME]
+[OTHERTEAM] GM [GM] has been named in ongoing tampering scandal surrounding [PLAYERNAME]
+Tensions are high in the [TEAM] clubhouse as [PLAYERNAME] reportedly started a fight with [PLAYERNAME]
+"[PLAYERNAME] is the best player I ever played against." - [PLAYERNAME]
+[PLAYERNAME] has reportedly requested a trade. Word is they're unhappy about [COMPLAINT] and are looking for a change of scenery
+The [TEAM] are your season 8 paper cup champions! - [PLAYERNAME]
+[TEAM] [POS1] [PLAYERNAME] was caught on the broadcast saying "I fucking hate this place" after making three errors in one inning
+The [TEAM] and [TEAM] are rumored to be scheduling a series at the Fake Field of Dreams
+[PLAYERNAME] has been suspended 2 sessions for instigating a benches clearing brawl
+OOTC is investigating reports that [GM] is holding the [TEAM] hostage in their basement
+[GM] has denied claims that the [TEAM] are moving to [LOCATION]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]
+[PLAYERNAME] [INCIDENT]. [STATUS]

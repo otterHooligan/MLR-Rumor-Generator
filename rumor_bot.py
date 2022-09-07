@@ -1,4 +1,6 @@
 import configparser
+import datetime
+import pytz
 import random
 import time
 import tweepy
@@ -16,6 +18,7 @@ access_token_secret = config_ini['Twitter']['access_token_secret']
 client_id = config_ini['Twitter']['client_id']
 client_secret = config_ini['Twitter']['client_secret']
 webhook = Webhook(config_ini['Discord']['webhook'])
+main_webhook = Webhook(config_ini['Discord']['main_webhook'])
 
 
 twitter = tweepy.API(tweepy.OAuthHandler(consumer_key, consumer_secret, access_token, access_token_secret))
@@ -34,9 +37,26 @@ def generate_rumor():
                 if cogm:
                     rumor = rumor.replace('[CO-GM]', cogm, 1)
                 else:
-                    return None
+                    return ''
             if '[PLAYERNAME]' in rumor:
                 players = db.fetch_data('SELECT playerName, priPos FROM playerData WHERE team=%s', (teams[i][0],))
+                player = random.choice(players)
+                rumor = rumor.replace('[PLAYERNAME]', player[0], 1)
+                rumor = rumor.replace('[POS1]', player[1], 1)
+    if rumor.count('[OTHERTEAM]') > 0:
+        team = random.choice(list(assets.team_names.items()))
+        for i in range(rumor.count('[OTHERTEAM]')):
+            rumor = rumor.replace('[OTHERTEAM]', team[1], 1)
+            gm, cogm = db.fetch_one('''SELECT gm, cogm FROM teamData WHERE abb=%s''', (team[0],))
+            if '[GM]' in rumor:
+                rumor = rumor.replace('[GM]', gm, 1)
+            if '[CO-GM]' in rumor:
+                if cogm:
+                    rumor = rumor.replace('[CO-GM]', cogm, 1)
+                else:
+                    return ''
+            if '[PLAYERNAME]' in rumor:
+                players = db.fetch_data('SELECT playerName, priPos FROM playerData WHERE team!=%s AND status=1', (team[0],))
                 player = random.choice(players)
                 rumor = rumor.replace('[PLAYERNAME]', player[0], 1)
                 rumor = rumor.replace('[POS1]', player[1], 1)
@@ -62,7 +82,11 @@ def generate_rumor():
         rumor = rumor.replace('[PAYMENT]', random.choice(assets.payments))
     if '[LEAGUE]' in rumor:
         rumor = rumor.replace('[LEAGUE]', random.choice(assets.leagues))
-    if random.randint(0, 10) < 3:
+    if '[INCIDENT]' in rumor:
+        rumor = rumor.replace('[INCIDENT]', random.choice(assets.incidents))
+    if '[STATUS]' in rumor:
+        rumor = rumor.replace('[STATUS]', random.choice(assets.status))
+    if random.randint(0, 10) < 1:
         rumor = f'{rumor}, {random.choice(assets.reactions)}'
     else:
         rumor += '.'
@@ -71,14 +95,19 @@ def generate_rumor():
 
 while True:
     try:
+
         generated_rumor = ''
         while generated_rumor == '':
             generated_rumor = generate_rumor()
         tweet = twitter.update_status(generated_rumor)
+        print(generated_rumor)
         webhook.send(f'https://twitter.com/twitter/statuses/{tweet.id}')
-        sleep_time = random.randint(900, 43200)
+        sleep_time = random.randint(3600, 43600)
+        sleep_until = (datetime.datetime.now(tz=pytz.timezone('US/Eastern')) + datetime.timedelta(seconds=sleep_time)).time()
+        webhook.send(f"Sleeping until {sleep_until.strftime('%I:%M %p')}")
         time.sleep(sleep_time)
     except Exception as e:
+        print(e)
         webhook.send('<@330153321262219284> something broke go fix it')
         webhook.send(f'{e}')
         time.sleep(360)

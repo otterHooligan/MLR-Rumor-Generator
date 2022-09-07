@@ -31,12 +31,91 @@ team_names = {
     'TOR': 'Blue Jays'
 }
 
-company = ['OnlyFans', 'PornHub', 'hololive', 'nijisanji', 'XVideos', 'Nike']
-complaints = ['not enough playing time', 'dead clubhouse', 'having too many otter profile pictures']
-injuries = ['hurt feelings', 'inflated sense of ego', 'testicular torsion', 'chapped lips', 'stubbed toe', 'back pain', 'extended refractory period', '"back pain"', 'bloody stool']
+company = ['OnlyFans', 'PornHub', 'hololive', 'nijisanji', 'XVideos', 'Nike', 'Church of the Flying Spaghetti Monster']
+complaints = ['not enough playing time', 'dead clubhouse', 'having too many otter profile pictures',
+              'excessive role pinging', 'not enough cat pictures', 'too many cat pictures', 'mod abuse',
+              'power hungry LOMs']
+incidents = ['dislocated their shoulder trying to win a ripping phone books in half contest. At least they won',
+             'ironed a shirt…while they was wearing it',
+             'had a dream they was being chased by a giant spider and fell through a glass table while jumping out of bed',
+             'woke up this morning',
+             'broke their collarbone carrying groceries up to their apartment',
+             'injured their back getting into a car',
+             'put a doughnut in the microwave. The microwave exploded',
+             'tore a muscle in their hand while changing channels with a TV remote',
+             'cut their hand while adjusting the strap of their wifes bra',
+             'was shot in the face with a shotgun',
+             'walked through a really, really, clean glass door',
+             'hit a game winning home run, jumped into the air, threw their helmet to the ground, and twisted their ankle after falling on on the helmet',
+             'kicked a cactus barefoot',
+             'suffered an anal fissure. No further details are needed',
+             'was using a Bowflex in the locker room when the strap snapped and sliced open their face',
+             'was bit by a spider',
+             'pulled a groin muscle tying their shoes',
+             'showed up at the ballpark drunk',
+             'injured their back blow drying their hair',
+             'broke their ankle when they slipped on an icy driveway',
+             'threw out their back when they picked up a broken cracker off the floor',
+             'cut their foot open while chopping wood with an axe',
+             'injured their foot while getting up off the couch',
+             'was given a motorcycle license',
+             'pulled a hamstring catching an honorary first pitch',
+             'suffered an inner ear injury when they put a Q-Tip in too far',
+             'fell off the roof while cleaning the gutters of their house',
+             'sliced their hand open while washing a broken dinner plate',
+             'tore their ACL attempting to dunk',
+             'has been diagnosed with an infected hair follicle',
+             'dislocated their shoulder while giving their teammate a hug',
+             'injured their neck while brushing their teeth',
+             'got struck by lightning',
+             'received first degree burns on their pubic region when someone threw a pot of boiling water at them',
+             'broke a rib throwing up airplane food',
+             'suffered back spasms after checking for traffic before crossing the street',
+             'broke their toe running to the TV',
+             'chipped their tooth on a microwaved frozen doughnut',
+             'was knocked unconscious after an overly aggressive bat flip landed on their head',
+             'dislocated their ankle while jumping on a trampoline with their son',
+             'suffering from blurred vision after rubbing lotion in their eyes at an Eric Clapton concert',
+             'is out with a toe infection after they tried to pop a blood blister with a power drill',
+             'managed to injure themself putting on a pair of cowboy boots',
+             'out with frostbite after falling asleep with an icepack on',
+             'stabbed themself in the stomach taking the plastic off a new DVD',
+             'dislocated their jaw yelling at their own teammates',
+             'tried to execute the classic shaving cream pie in the face move after a walk-off win, but botched the finish and instead wrecked their knee',
+             'diagnosed with tendonitis in their thumb from playing too much GameBoy',
+             'tore their ACL after being tackled by their own manager while arguing a call',
+             'suffered hand lacerations when they punched through the glass door of a fire extinguisher',
+             'suffered 2nd degree burns after falling asleep inside a tanning booth',
+             'diagnosed with a concussion after headbutting the dugout wall celebrating a homerun',
+             'out with a possible concussion after a toilet stall door fell on their head',
+             'diagnosed with right wrist inflammation due to playing too much Guitar Hero',
+             'suffered severe burns on their hands after an accident setting off fireworks',
+             'sprained a lower back ligament after a mighty sneeze',
+             'tore their ACL while vigorously fist pumping', ]
+injuries = ['hurt feelings', 'inflated sense of ego', 'testicular torsion', 'chapped lips', 'stubbed toe', 'back pain',
+            'extended refractory period', '"back pain"', 'bloody stool', 'trouble getting out of bed']
 leagues = ['MLN', 'NPFB', 'PBE', 'ISFL', 'SHL', 'MLB', 'NBA', 'WNBA', 'GIB']
-locations = ['Las Vegas', 'Atlantis', 'Area 51', 'Tatooine', 'Mordor', 'the moon', 'Gary, Indiana']
-payments = ['NFTs', 'Cheech Coin', 'otter profile pictures', 'Dogecoin', 'GME stock', 'future considerations', 'pizza', 'potatoes', 'Barnickles', 'an egg', 'Cadbury Creme Eggs']
-reactions = ['fans rejoice!', 'to the shock of no one.', 'in a questionable move.', 'leaving this reporter puzzled.', 'shocking fans everywhere.', 'in an interesting move.']
-trades = ['Reddit Gold', 'cash considerations', 'a player to be named later', 'a bag of baseballs', 'a month of Discord Nitro', '"scouting considerations"', 'scouting considerations']
-
+locations = ['Las Vegas', 'Atlantis', 'Area 51', 'Tatooine', 'Mordor', 'the moon', 'Gary, Indiana', 'Paris',
+             'Hong Kong', 'Wakanda', 'Bird in Hand, Pennsylvania', 'Bowsers Castle', 'your moms basement',
+             'Raleigh, NC', 'Memphis, TN', 'anywhere but Montreal', 'the Gulag', 'Wawa', 'Hell in a Cell']
+payments = ['NFTs', 'Cheech Coin', 'otter profile pictures', 'Dogecoin', 'GME stock', 'future considerations', 'pizza',
+            'potatoes', 'Barnickles', 'eggs', 'Cadbury Creme Eggs', 'hard boiled eggs']
+reactions = ['fans rejoice!', 'to the shock of no one.', 'in a questionable move.', 'leaving this reporter puzzled.',
+             'shocking fans everywhere.', 'in an interesting move.', 'FSPN reports.',
+             'according to a source at FMZ Sports.',
+             'according to a reputable source.', '']
+trades = ['Reddit Gold', 'cash considerations', 'a player to be named later', 'a bag of baseballs',
+          'a month of Discord Nitro', '"scouting considerations"', 'scouting considerations',
+          'a conditional 4th round pick', 'a conditional 5th round pick', 'a conditional 6th round pick',
+          'a 1st round pick', 'a 2nd round pick', 'a 3rd round pick', 'a 4th round pick', 'a 5th round pick',
+          'a 6th round pick', 'a can of cheese whiz', 'empty promises']
+status = ['Status is day to day', 'Expected to be out at least two weeks', 'Out for the season',
+          'Not expected to return this season', 'Expected to be back in a few days',
+          'Expected to rehab in MiLR for a few days', 'Surgery has been scheduled',
+          'Expected to get an MRI in the morning', 'Has been transferred to the 60 day injured list',
+          'On the verge of returning from the injured list',
+          'Has been transferree from the 7-day injured list to the 60-day IL',
+          'Underwent surgery this morning', 'Will make a rehab start in the minors next session',
+          'Rehab assignment has been shut down',
+          'Status is unclear at this time', 'Has been cleared to play catch',
+          'Expected to play in a simulated game soon', 'unlikely to return for the rest of the season']
